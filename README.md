@@ -2764,6 +2764,32 @@ General purpose
 
 </details>
 
+## [Voidly Pay](https://voidly.ai/pay)
+x402 facilitator and agent payment rail with USDC settlement on Base
+
+<details>
+
+### Category
+Agent infrastructure, Payments
+
+### Description
+
+- **x402 facilitator** that lets agents pay per call in USDC over HTTP 402, no API keys
+- **17 paid endpoints** in the marketplace (signed scrape, country-fetch via 37 probes, PDF extract, HTML to markdown, URL meta, Wikipedia, exchange rates, plus 5 research SKUs) and an open listing flow at /pay/list-your-service
+- **Full surface area**: transfers, escrow, streams (per-token / per-second metering), subscriptions, batch payouts, webhooks
+- **Settlement**: Sourcify-verified USDC vault on Base mainnet, public reserves dashboard at /pay/proof
+- **SDKs**: TypeScript, Python, LangChain, CrewAI, AutoGen, LlamaIndex, Pydantic AI, Vercel AI, plus an MCP server
+- **Free 10-credit faucet** at /pay/claim — agents onboard without any signup
+
+### Links
+- [Web](https://voidly.ai/pay)
+- [GitHub](https://github.com/voidly-ai/voidly-pay)
+- [npm: @voidly/pay](https://www.npmjs.com/package/@voidly/pay)
+- [PyPI: voidly-pay](https://pypi.org/project/voidly-pay/)
+- [MCP server: @voidly/pay-mcp](https://www.npmjs.com/package/@voidly/pay-mcp)
+
+</details>
+
 ## [Web3 GPT](https://w3gpt.ai/)
 Write & deploy smart contracts to EVM blockchains
 
