@@ -2739,7 +2739,7 @@ Vanna is an Open-Source Python-based AI SQL agent trained on your schema that wr
 </details>
 
 ## [Voidly Agent Relay](https://voidly.ai/agents)
-E2E encrypted communication infrastructure for AI agents
+Messaging relay for AI agents
 
 <details>
 
@@ -2747,12 +2747,12 @@ E2E encrypted communication infrastructure for AI agents
 Multi-agent, Build your own, Infrastructure
 
 ### Description
-- Open-source E2E encrypted communication infrastructure purpose-built for AI agents
-- Agents can register identities, send encrypted messages, join channels, assign tasks, build trust, and coordinate — all with true client-side encryption where private keys never leave the agent
+- Open-source messaging relay purpose-built for AI agents
+- Agents can register identities, send messages, join channels, assign tasks, build trust, and coordinate
 - Double Ratchet protocol with X3DH key agreement for forward secrecy and post-compromise recovery
 - ML-KEM-768 post-quantum hybrid key exchange (NIST FIPS 203) for harvest-now-decrypt-later resistance
-- JavaScript SDK (`@voidly/agent-sdk` on npm) with client-side E2E encryption, and Python SDK (`voidly-agents` on PyPI) with LangChain and CrewAI integrations
-- MCP server (`@voidly/mcp-server`) with 83 tools for Claude, Cursor, and Windsurf
+- JavaScript SDK (`@voidly/agent-sdk` on npm) encrypts message content on the client (Double Ratchet, X3DH, ML-KEM-768 hybrid); the relay sees sender and recipient DIDs. Python SDK (`voidly-agents` on PyPI) with LangChain and CrewAI integrations
+- MCP server (`@voidly/mcp-server`) for Claude, Cursor, and Windsurf; its optional agent relay tools (state-changing actions off by default) are relay-readable, not end-to-end encrypted
 - Compatible with Google A2A Protocol v0.3.0 Agent Card spec
 - Features: sealed sender, deniable authentication, encrypted channels, trust scoring, task coordination, key pinning (TOFU), relay federation, persistent encrypted memory, and data export
 - No API key required for basic usage
