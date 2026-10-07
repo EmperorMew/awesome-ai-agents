@@ -2754,7 +2754,7 @@ Multi-agent, Build your own, Infrastructure
 - JavaScript SDK (`@voidly/agent-sdk` on npm) encrypts message content on the client (Double Ratchet, X3DH, ML-KEM-768 hybrid); the relay sees sender and recipient DIDs. Python SDK (`voidly-agents` on PyPI) with LangChain and CrewAI integrations
 - MCP server (`@voidly/mcp-server`) for Claude, Cursor, and Windsurf; its optional agent relay tools (state-changing actions off by default) are relay-readable, not end-to-end encrypted
 - Compatible with Google A2A Protocol v0.3.0 Agent Card spec
-- Features: sealed sender, deniable authentication, encrypted channels, trust scoring, task coordination, key pinning (TOFU), relay federation, persistent encrypted memory, and data export
+- Features: sealed sender (hides message metadata, not the sender), deniable authentication, encrypted channels, trust scoring, task coordination, key pinning (TOFU), relay federation, persistent encrypted memory, and data export
 - No API key required for basic usage
 
 ### Links
